@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home | Iken Commercial Contracting</title>
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#2B3138;text-decoration:none}a:hover{color:#C0181E}
+.ph{background-color:#2B3138;background-image:repeating-linear-gradient(135deg,rgba(255,255,255,0.05) 0 14px,transparent 14px 28px)}
+input,select,textarea,button{font:inherit}
+</style>
+</head>
+<body>
+
+<div style="font-family: 'Montserrat', sans-serif; color: #2B3138; background: #FFFFFF">
+
+<header style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 32px; border-bottom: 1px solid #E3E5E8; background: #FFFFFF">
+<a href="index.html" aria-label="Iken Commercial Contracting home" style="display: flex; align-items: center"><img src="logo.png" alt="Iken Commercial Contracting" style="height: 72px; width: auto; display: block"></a>
+<nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 4px">
+<a href="services.html" style="padding: 12px 16px; font-weight: 600; font-size: 15px">Services</a>
+<a href="projects.html" style="padding: 12px 16px; font-weight: 600; font-size: 15px">Projects</a>
+<a href="contact.html" style="padding: 12px 16px; font-weight: 600; font-size: 15px">Contact</a>
+<a href="about.html" style="padding: 12px 16px; font-weight: 600; font-size: 15px">About</a>
+</nav>
+</header>
+
+<section aria-label="Project photos" class="ph" style="position: relative; height: 560px; display: flex; align-items: center; justify-content: center; color: #FFFFFF">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center; padding: 0 96px">
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: #C9CDD2"><span id="s-tag"></span></div>
+<div style="font-size: 44px; font-weight: 800; line-height: 1.1; max-width: 760px"><span id="s-title"></span></div>
+<div style="font-size: 14px; color: #C9CDD2">[Project photo <span id="s-num"></span>]</div>
+</div>
+<button type="button" id="prev" aria-label="Previous photo" style="position: absolute; left: 24px; top: 50%; transform: translateY(-50%); width: 52px; height: 52px; border: 2px solid #FFFFFF; background: transparent; color: #FFFFFF; cursor: pointer; display: flex; align-items: center; justify-content: center">
+<svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"></path></svg>
+</button>
+<button type="button" id="next" aria-label="Next photo" style="position: absolute; right: 24px; top: 50%; transform: translateY(-50%); width: 52px; height: 52px; border: 2px solid #FFFFFF; background: transparent; color: #FFFFFF; cursor: pointer; display: flex; align-items: center; justify-content: center">
+<svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"></path></svg>
+</button>
+<div style="position: absolute; bottom: 24px; left: 0; right: 0; display: flex; justify-content: center; gap: 10px">
+<span class="dot" style="width: 10px; height: 10px; border-radius: 50%; border: 2px solid #FFFFFF"></span><span class="dot" style="width: 10px; height: 10px; border-radius: 50%; border: 2px solid #FFFFFF"></span><span class="dot" style="width: 10px; height: 10px; border-radius: 50%; border: 2px solid #FFFFFF"></span>
+</div>
+<div style="position: absolute; left: 0; right: 0; bottom: 0; height: 8px; background: #C0181E"></div>
+</section>
+
+<section style="padding: 88px 32px; display: flex; justify-content: center">
+<div style="max-width: 760px; display: flex; flex-direction: column; align-items: center; gap: 18px; text-align: center">
+<div style="font-size: 13px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: #C0181E">Our Mission</div>
+<h1 style="margin: 0; font-size: 40px; font-weight: 800; line-height: 1.15">We get small businesses open fast.</h1>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #4A525B">We help small businesses open their doors faster by managing commercial buildouts, remodels, and tenant improvements with speed and transparency.</p>
+<div style="width: 48px; height: 3px; background: #C0181E"></div>
+</div>
+</section>
+
+<section style="display: flex; flex-wrap: wrap; border-top: 1px solid #E3E5E8">
+<div style="flex: 3 1 480px; padding: 64px 48px; background: #F4F5F6; box-sizing: border-box">
+<h2 style="margin: 0 0 8px; font-size: 28px; font-weight: 800">Start your project</h2>
+<p style="margin: 0 0 28px; font-size: 16px; color: #4A525B">Tell us a little about what you're building and we'll get back to you within one business day.</p>
+<div id="thanks" hidden="hidden" role="status" style="padding: 24px; background: #FFFFFF; border: 2px solid #C0181E; font-weight: 600">Thanks! We got your request and will reach out soon.</div>
+<form id="inquiry" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px">
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600">Name<input type="text" required="required" style="padding: 12px 14px; border: 1px solid #B8BEC5; background: #FFFFFF; font-size: 16px"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600">Business name<input type="text" style="padding: 12px 14px; border: 1px solid #B8BEC5; background: #FFFFFF; font-size: 16px"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600">Email<input type="email" required="required" style="padding: 12px 14px; border: 1px solid #B8BEC5; background: #FFFFFF; font-size: 16px"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600">Phone<input type="tel" style="padding: 12px 14px; border: 1px solid #B8BEC5; background: #FFFFFF; font-size: 16px"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600">Project type<select style="padding: 12px 14px; border: 1px solid #B8BEC5; background: #FFFFFF; font-size: 16px"><option>Commercial build-out</option><option>Retail store</option><option>Addition / expansion</option><option>Other</option></select></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600">Target opening date<input type="date" style="padding: 12px 14px; border: 1px solid #B8BEC5; background: #FFFFFF; font-size: 16px"></label>
+<label style="grid-column: 1 / -1; display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600">Tell us about the project<textarea rows="4" style="padding: 12px 14px; border: 1px solid #B8BEC5; background: #FFFFFF; font-size: 16px; resize: vertical"></textarea></label>
+<div style="grid-column: 1 / -1"><button type="submit" style="padding: 14px 28px; min-height: 48px; border: none; background: #C0181E; color: #FFFFFF; font-weight: 700; font-size: 15px; letter-spacing: 1px; text-transform: uppercase; cursor: pointer">Send request</button></div>
+</form>
+</div>
+<div style="flex: 2 1 320px; padding: 64px 48px; background: #2B3138; color: #FFFFFF; box-sizing: border-box; display: flex; flex-direction: column; gap: 28px">
+<h2 style="margin: 0; font-size: 28px; font-weight: 800">Contact info</h2>
+<div style="display: flex; flex-direction: column; gap: 6px"><div style="font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #C9CDD2">Phone</div><a href="tel:7202313886" style="color: #FFFFFF; font-size: 18px; font-weight: 600">720.231.3886</a></div>
+<div style="display: flex; flex-direction: column; gap: 6px"><div style="font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #C9CDD2">Email</div><a href="mailto:charlie@ikencommercial.com" style="color: #FFFFFF; font-size: 18px; font-weight: 600">charlie@ikencommercial.com</a></div>
+<div style="display: flex; flex-direction: column; gap: 6px"><div style="font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #C9CDD2">Office</div><div style="font-size: 18px; font-weight: 600; line-height: 1.4">4580 N Broadway, Suite 200<br>Boulder, CO 80304</div></div>
+<div style="display: flex; flex-direction: column; gap: 6px"><div style="font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #C9CDD2">Hours</div><div style="font-size: 18px; font-weight: 600">[Mon–Fri, 7am–5pm]</div></div>
+</div>
+</section>
+
+<footer style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; padding: 24px 32px; background: #1F2429; color: #C9CDD2; font-size: 13px; border-top: 6px solid #C0181E">
+<span>© 2026 Iken Commercial Contracting</span>
+<span>Boulder, Colorado</span>
+</footer>
+</div>
+<script>
+(function(){
+var f=document.getElementById('inquiry');
+if(f){f.addEventListener('submit',function(e){e.preventDefault();f.style.display='none';document.getElementById('thanks').hidden=false;});}
+var s=[{t:'Commercial',h:'Built for small businesses'},{t:'Retail',h:'Storefronts ready to open'},{t:'Additions',h:'Room to grow, on schedule'}],i=0;
+var tag=document.getElementById('s-tag');if(!tag)return;
+var dots=document.querySelectorAll('.dot');
+function show(){tag.textContent=s[i].t;document.getElementById('s-title').textContent=s[i].h;document.getElementById('s-num').textContent=i+1;dots.forEach(function(d,k){d.style.background=k===i?'#FFFFFF':'transparent';});}
+document.getElementById('prev').onclick=function(){i=(i+s.length-1)%s.length;show();};
+document.getElementById('next').onclick=function(){i=(i+1)%s.length;show();};
+show();
+})();
+</script>
+</body>
+</html>
