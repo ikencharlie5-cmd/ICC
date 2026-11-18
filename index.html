@@ -89,7 +89,7 @@ input,select,textarea,button{font:inherit}
 (function(){
 var f=document.getElementById('inquiry');
 if(f){f.addEventListener('submit',function(e){e.preventDefault();f.style.display='none';document.getElementById('thanks').hidden=false;});}
-var s=[{t:'Commercial',h:'Built for small businesses',img:'slide1.jpg'},{t:'Retail',h:'Storefronts ready to open'},{t:'Additions',h:'Room to grow, on schedule'}],i=0;
+var s=[{t:'Commercial',h:'Built for small businesses',img:'slide1.jpg'},{t:'Retail',h:'Storefronts ready to open',img:'slide2.jpg'},{t:'Additions',h:'Room to grow, on schedule'}],i=0;
 var tag=document.getElementById('s-tag');if(!tag)return;
 var dots=document.querySelectorAll('.dot');
 function show(){tag.textContent=s[i].t;document.getElementById('s-title').textContent=s[i].h;document.getElementById('s-num').textContent=i+1;var hero=document.getElementById('hero');hero.style.backgroundImage=s[i].img?'linear-gradient(rgba(31,36,41,0.55),rgba(31,36,41,0.55)), url('+s[i].img+')':'';document.getElementById('s-ph').style.display=s[i].img?'none':'';dots.forEach(function(d,k){d.style.background=k===i?'#FFFFFF':'transparent';});}
